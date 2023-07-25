@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+	<h1><font color="blue">UsernameNotFoundException 발생!</font></h1>
+	<a th:href="@{/}">메인 화면으로</a>
+	<table>
+		<tr>
+			<th bgcolor="blue" align="left">예외 메세지 : [[${exception.message}]]</th>
+		</tr>
+	<!--	<tr th:each="trace : ${exception.stackTrace}">
+			<td th:text="${trace}">
+		</tr>-->
+		<td><a href="/login">로그인</a></td>
+	</table>
+</body>
+</html>
